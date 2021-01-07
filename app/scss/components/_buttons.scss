@@ -1,0 +1,15 @@
+.btn {
+  padding: 12px 30px;
+  text-transform: uppercase;
+  @include font-size(14px);
+  letter-spacing: 1px;
+
+  &--primary {
+    background: $rose;
+    color: $white;
+  }
+  &--secondary {
+    background: $white;
+    color: $rose;
+  }
+}

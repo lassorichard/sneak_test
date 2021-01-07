@@ -4,16 +4,23 @@ body {
   font-family: 'Questrial', sans-serif;
 } 
 
+a {
+  text-decoration: none;
+}
+
 h1 {
-  font-family: 'Questrial', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   @include font-size (53px);
   font-weight: bold;
+  letter-spacing: 10px;
 }
 
 h2 {
-  font-family: 'Questrial', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   @include font-size (16px);
   font-weight: normal;
+  letter-spacing: 2px;
+  line-height: 20px;
 }
 
 .title-brand {

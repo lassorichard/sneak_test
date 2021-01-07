@@ -311,17 +311,23 @@ template {
 body {
   font-family: 'Questrial', sans-serif; }
 
+a {
+  text-decoration: none; }
+
 h1 {
-  font-family: 'Questrial', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 53px;
   font-size: 3.3125rem;
-  font-weight: bold; }
+  font-weight: bold;
+  letter-spacing: 10px; }
 
 h2 {
-  font-family: 'Questrial', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   font-size: 1rem;
-  font-weight: normal; }
+  font-weight: normal;
+  letter-spacing: 2px;
+  line-height: 20px; }
 
 .title-brand {
   font-family: 'Montserrat', sans-serif;
@@ -385,7 +391,7 @@ li {
         display: flex; } }
     @media only screen and (min-width: 1024px) {
       .header__navigation .page-navigation li {
-        padding: 10px 30px; } }
+        padding: 12px 30px; } }
   .header__navigation .icon-search {
     font-size: 20px;
     font-size: 1.25rem;
@@ -423,10 +429,34 @@ li {
       .menu-active .header__navigation .page-navigation li {
         padding: 20px 0;
         width: 100%; }
-        @media only screen and (min-width: 1024px) {
-          .menu-active .header__navigation .page-navigation li {
-            padding: 10px 30px !important; } }
 
 .selected {
   background: #fc758c;
   color: #ffffff; }
+
+.hero {
+  background: linear-gradient(to left, rgba(112, 112, 112, 0.6), rgba(112, 112, 112, 0.6)), url("../images/hero.jpg") no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center; }
+  .hero__title, .hero__subtitle {
+    color: #ffffff; }
+  .hero .btn {
+    margin-top: 40px; }
+
+.btn {
+  padding: 12px 30px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-size: 0.875rem;
+  letter-spacing: 1px; }
+  .btn--primary {
+    background: #fc758c;
+    color: #ffffff; }
+  .btn--secondary {
+    background: #ffffff;
+    color: #fc758c; }
