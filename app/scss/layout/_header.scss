@@ -5,14 +5,23 @@
   justify-content: space-between;
   padding: 20px 20px;
 
+  @include from (desktop) {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
   &__menu {
-    @include font-size(30px);
+    @include font-size(20px);
     color: $rose;
+
+    @include from (desktop) {
+      display: none;
+    }
   }
 
   &__close {
     display: none;
-    @include font-size(40px);
+    @include font-size(30px);
     color: $rose;
   }
 
@@ -32,13 +41,31 @@
   }
 
   &__navigation {
+    @include from (desktop) {
+      display: flex;
+      align-items: center;
+    }
     .page-navigation {
       display: none;
+
+      @include from (desktop) {
+        display: flex
+      }
+
+      li {
+        @include from (desktop) {
+          padding: 10px 30px;
+        }
+      }
       
     }
     .icon-search {
-      @include font-size(30px);
+      @include font-size(20px);
       color: $rose;
+      
+      @include from (desktop) {
+        padding: 10px 30px;
+      }
     }
   }
   
@@ -78,6 +105,10 @@
       li {
         padding: 20px 0;
         width: 100%;
+
+        @include from (desktop) {
+          padding: 10px 30px !important;
+        }
       }
     }
   }
