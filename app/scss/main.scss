@@ -1,3 +1,11 @@
 body {
-  background-color: red;
+  background-color: rgb(179, 175, 175);
 }
+@import "utilities/normalize";
+@import "variables/variables";
+@import "variables/colors";
+@import "mixins/mixins";
+@import "fonts/fonts";
+@import "layout/header";
+
+

@@ -4,7 +4,8 @@
   "description": "Sneak test Tita Media",
   "main": "index.js",
   "dependencies": {
-    "gulp": "^4.0.2"
+    "gulp": "^4.0.2",
+    "normalize.css": "^8.0.1"
   },
   "devDependencies": {
     "browser-sync": "^2.26.13",

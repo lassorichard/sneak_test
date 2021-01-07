@@ -1,0 +1,24 @@
+$white: #ffffff;
+$rose: #fc758c;
+$black: #707070;
+$dark-gray: #c3d0d8;
+$light-gray: #f6f6f6;
+
+// breakpoints
+
+$bp-mobile: 400px;
+$bp-tablet: 768px;
+$bp-desktop: 1024px;
+$bp-huge: 1200px;
+
+$bps: (
+    'mobile': $bp-mobile,
+    'tablet': $bp-tablet,
+    'desktop': $bp-desktop,
+    'huge': $bp-huge
+
+);
+
+//font size rem
+
+$base-font-size: 16px;

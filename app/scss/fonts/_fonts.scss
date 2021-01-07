@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Questrial&display=swap');
+
+body {
+  font-family: 'Questrial', sans-serif;
+} 
+
+h1 {
+  font-family: 'Questrial', sans-serif;
+  @include font-size (53px);
+  font-weight: bold;
+}
+
+h2 {
+  font-family: 'Questrial', sans-serif;
+  @include font-size (16px);
+  font-weight: normal;
+}
+
+.title-brand {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 4px;
+  color: $black;
+  @include font-size (19px);
+
+}
+
+.subtitle-brand {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: $dark-gray;
+  @include font-size (10px);
+}
+
+li {
+  list-style: none;
+  letter-spacing: 4px;
+}

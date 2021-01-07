@@ -1,0 +1,89 @@
+.header {
+  background: $white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 20px;
+
+  &__menu {
+    @include font-size(30px);
+    color: $rose;
+  }
+
+  &__close {
+    display: none;
+    @include font-size(40px);
+    color: $rose;
+  }
+
+  &__brand {
+    display: flex;
+    align-items: center;
+
+    &__img {
+      width: 100%;
+      max-width: 40px;
+    }
+
+    &__name {
+      padding-left: 20px;
+    }
+
+  }
+
+  &__navigation {
+    .page-navigation {
+      display: none;
+      
+    }
+    .icon-search {
+      @include font-size(30px);
+      color: $rose;
+    }
+  }
+  
+}
+
+.menu-active {
+  height: 100vh;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+  transition: ease all .3s;
+  // transform: translateX(-100%);
+
+  .header__menu {
+    display: none;
+  }
+  .header__close {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 40px;
+  }
+  .header__brand {
+    padding: 60px 0;
+  }
+  .header__navigation {
+    text-align: center;
+    .page-navigation {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      @include font-size(28px);
+      color: $black;
+      padding: 0;
+
+      li {
+        padding: 20px 0;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.selected {
+  background: $rose;
+  color: $white;
+}
