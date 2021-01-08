@@ -1,27 +1,27 @@
-# Richard Lasso - Prueba Tita Media
+# Richard Lasso - Tita Media Test
 
 > Sneak website
 
 ## Repository
 
-1. Descargar repositorio:
->Encontrará una rama principal con sus respectivos commits, las ramas se trabajaron de manera local.
+1. Download:
+>You will find a main branch with its respective commits, the branches were worked locally.
 
-para main:
+Main Branch:
 ```bash
 git clone https://github.com/lassorichard/sneak_test.git
 ```
 
 ### Installation
 
-[Node.js](https://nodejs.org/) v12.17.0+ es requerido para iniciar el desarrollo.
+[Node.js](https://nodejs.org/) v12.17.0+ its required to start development.
 
-Instalar Gulp.js
+Install Gulp.js
 ```bash
 $ npm install --global gulp-cli
 ```
 
-Instalar las dependencies/devDependencies e iniciar el servidor local.
+Install dependencies/devDependencies and start a local server.
 
 ```bash
 $ cd sneak_test
@@ -30,12 +30,14 @@ $ npm start || gulp
 ```
 
 
-## Información importante acerca del proyecto
+## Relevant information
 
-1. Mobile First como base fundamental en el desarrollo del proyecto
-2. Tags semánticos usados basados en los estándares de HTML5
-3. Como preprocesador de estilos se usó SCSS, los diferentes componentes .scss están organizados dentro de app/scss
-4. Uso de mixins:
+1. Mobile First as a fundamental basis in the development of the project.
+2. Used semantic tags based on HTML5 standards
+3. SCSS was used as style preprocessor, the different .scss components are organized in the following location app/scss
+4. Mixins used:
+
+> Breakpoints:
 
 ```bash
 $bp-mobile: 400px;
@@ -43,37 +45,37 @@ $bp-tablet: 768px;
 $bp-desktop: 1024px;
 $bp-huge: 1200px;
 ```
-> Para los breakpoints, se usaron dentro de los componentes scss con el fin de usar diferentes anchos, acá uno ejemplo:
+> Breakpoint example:
 
 ```bash
 @inlude from(tablet) {
- //estilos correspondientes a la vista tablet
+ //styles
 }
 ```
 
 ```bash
 $base-font-size: 16px;
 ```
-> Para las fuentes, se creó un mixin el cuál convierte a rem los tamaños de fuente:
+> Mixins fonts, convert px to rem:
 
 ```bash
 @inlude font-size(20px)
 rendered: font-size: 20px; and font-size: 1.25rem;
 ```
 
-5. La metodología utilizada para el preprocesador sass fue BEM (Block, Element, Modifier)
-6. Dentro del proyecto la utilizacion de CSS Flexbox fue crucial y tambien en pequeña proporción se utilizó CSS Gridbox.
-7. Los items de la sección "home layout" fueron cargados por medio de un Json en la ubicacion app/products.json
-8. La animación del menú fue desarrollada gracias a la integración de CSS y JS, haciendo posible un diseño fluido y al mismo tiempo bloqueando el scroll para poner en detalle el menú.
-9. Se crearon las etiquetas para el posicionamiento de la pagina web en los buscadores
+5. The methodology used for the sass preprocessor was BEM (Block, Element, Modifier)
+6. In the project CSS Flexbox was used and in small proportions CSS Gridbox was also used.
+7. The items in the "portfolio layout" were loaded by a Json in the following location app/products.json
+8. The menu animation was developed thanks to the integration of CSS and JS.
+9. Tags were created for the positioning of the web page in search engines.
 
 ## Notas
-Por limitación de tiempo hay algunas cosas que hubiera querido hacer:
-1. Realizar el grid layout con un dinamismo en JS para que sea interactivo y poderlo controlar.
-4. Hacer cross browsing en diferentes dispositivos y navegadores.
-5. Implementar un lógica de lazy loading para las imagenes optimizando así tiempo de carga y peso.
-6. Configurar tareas de Unit Testing.
-7. Hacer pruebas en screen reader para la accesibilidad.
+Due to time constraints there are some things I would have liked to do:
+1. Make the grid layout with a dynamism in JS to make it interactive.
+4. Cross browsing on different devices and browsers.
+5. Implement a lazy loading logic for images, optimizing loading time and weight.
+6. Configure Unit Testing tasks.
+7. Test Screen Reader for accessibility.
 
 
 ## Tech stack
@@ -88,5 +90,7 @@ ES6
 
 JS
 
+GULP
 
-### Aprecio su tiempo leyendo este documento 
+
+### I appreciate your time reading this document.
