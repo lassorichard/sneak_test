@@ -59,6 +59,7 @@
     }
     &__category {
       letter-spacing: 4px;
+      text-transform: capitalize;
     }
     &__title {
       font-weight: bold;
@@ -68,10 +69,39 @@
       border-bottom: solid $white 1px;
       margin: 0 60px;
     }
-
-
   }
 }
+
+// .category {
+//   &-branding {
+//     display: none;
+
+//     &-display {
+//       display: block;
+//     }
+//   }
+//   &-web {
+//     display: none;
+
+//     &-display {
+//       display: block;
+//     }
+//   }
+//   &-photography {
+//     display: none;
+
+//     &-display {
+//       display: block;
+//     }
+//   }
+//   &-app {
+//     display: none;
+
+//     &-display {
+//       display: block;
+//     }
+//   }
+// }
 
 
 .masonry-view-list {

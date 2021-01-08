@@ -584,7 +584,8 @@ li {
       color: #ffffff;
       padding: 20px 0; }
     .masonry__content__category {
-      letter-spacing: 4px; }
+      letter-spacing: 4px;
+      text-transform: capitalize; }
     .masonry__content__title {
       font-weight: bold;
       font-family: 'Montserrat', sans-serif;
