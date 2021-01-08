@@ -5,37 +5,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/b362a236d6.js" crossorigin="anonymous"></script>
 
+  <meta name="description" content="Sneak -- Explore Beyond Horizon.">
+  <meta name="keywords" content="branding, web, website, photography, app">
+
   <link rel="stylesheet" href="css/main.css">
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
   <title>Sneak Site</title>
 </head>
 <body>
 
+  <!-- header -->
+  
   <header class="header " id="header">
+    <!-- hamburger icon -->
     <div class="header__menu">
       <i id="menu" class="fas fa-bars"></i>
     </div>
+    <!-- close icon -->
     <div class="header__close">
       <i id="close" class="fas fa-times"></i>
     </div>
+    <!-- brand -->
     <div class="header__brand">
-      <img src="images/logo-sneak.png" alt="" class="header__brand__img">
+      <a href="#" class="header__brand">
+        <img src="images/logo-sneak.png" alt="" class="header__brand__img">
       <div class="header__brand__name">
         <div class="title-brand">Sneak</div>
         <div class="subtitle-brand">Creative&nbsp;Portoflio</div>
       </div>
+      </a>
     </div>
+    <!-- navigation header -->
     <nav class="header__navigation">
       <ul class="page-navigation">
-        <li class="selected">All</li>
-        <li>Branding</li>
-        <li>Web</li>
-        <li>Photography</li>
-        <li>App</li>
+        <a href="#home"><li id="all" class="category selected">All</li></a>
+        <a href="#home"><li id="branding" class="category">Branding</li></a>
+        <a href="#home"><li id="web" class="category">Web</li></a>
+        <a href="#home"><li id="photography" class="category">Photography</li></a>
+        <a href="#home"><li id="app" class="category">App</li></a>
       </ul>
       <i class="icon-search fas fa-search"></i>
     </nav>
   </header>
+
+  <!-- header end-->
+
+  <!-- hero -->
 
   <section class="hero">
     <h1 class="hero__title">
@@ -49,6 +64,10 @@
       View our work
     </a>
   </section>
+
+  <!-- hero end-->
+
+  <!-- home -->
 
   <main class="home max-width" id="home">
     <div class="view">
@@ -79,6 +98,10 @@
     </a>
   </main>
 
+  <!-- home end-->
+
+  <!-- footer -->
+
   <footer class="footer max-width">
     <div class="footer__top">
       &copy; 2020 - <span class="rose">Sneak</span> All Right Reserved
@@ -91,6 +114,8 @@
       <a href="#"><i class="fab fa-youtube"></i></a>
     </div>
   </footer>
+
+  <!-- footer end -->
 
   <script src="main.js"></script>
 </body>

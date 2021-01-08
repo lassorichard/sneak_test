@@ -1,19 +1,16 @@
 .home {
   padding: 40px 20px;
   text-align: center;
-
-  
 }
+
 #moreButton {
   cursor: pointer;
-  // margin-right: 10px;
+  display: inline-block;
   margin-bottom: 10px;
-  display: block;
 }
 #lessButton {
-  // margin-left: 10px;
   cursor: pointer;
-  display: block;
+  display: none;
 }
 
 .shown{

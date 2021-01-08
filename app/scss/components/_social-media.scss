@@ -3,5 +3,10 @@
 
   a {
     color: $dark-gray;
+    transition: ease all .3s;
+
+    &:hover {
+      color: $rose;
+    }
   }
 }

@@ -50,55 +50,6 @@ viewGrid.addEventListener('click', (e)=> {
 });
 
 
-// Mostras mas y mostrar menos
-
-// function showMore() {
-
-// 	var listData = Array.prototype.slice.call(document.querySelectorAll('#masonry .masonry__item:not(.shown)')).slice(0, 10);
-
-//   for (var i=0; i < listData.length; i++)
-//   {
-//     listData[i].className  = 'masonry__item shown';
-//   }
-//   switchButtons();
-// }
-
-// function showLess() {
-// 	var listData = Array.prototype.slice.call(document.querySelectorAll('#masonry .masonry__item:not(.hidden)')).slice(-3);
-//   for (var i=0; i < listData.length; i++)
-//   {
-//     listData[i].className  = 'masonry__item hidden';
-//   }
-//   switchButtons();
-// }
-
-// function switchButtons() {
-// 	var hiddenElements = Array.prototype.slice.call(document.querySelectorAll('#masonry .masonry__item:not(.shown)'));
-//   if(hiddenElements.length == 0)
-//   {
-//     document.getElementById('moreButton').style.display = 'none';
-//   }
-//   else
-//   {
-//     document.getElementById('moreButton').style.display = 'inline-block';
-//   }
-
-//   var shownElements = Array.prototype.slice.call(document.querySelectorAll('#masonry .masonry__item:not(.hidden)'));
-//   if(shownElements.length <= 10)
-//   {
-//     document.getElementById('lessButton').style.display = 'none';
-//   }
-//   else
-//   {
-//     document.getElementById('lessButton').style.display = 'inline-block';
-//   }
-// }
-
-// onload= function(){
-// 	showMore();
-// }
-
-
 // JSON files
 
 function bringData () {
@@ -123,7 +74,7 @@ function showResult(txt) {
 
   for (let item of data) {
     masonry.innerHTML += `
-    <div class="category-${item.category} masonry__item" id="masonry__item">
+    <div class="category-${item.category} masonry__item">
       <img src="${item.src}" class="masonry__img">
       <div class="masonry__content">
         <div class="masonry__content__title">

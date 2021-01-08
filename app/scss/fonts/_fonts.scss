@@ -9,39 +9,43 @@ a {
 }
 
 h1 {
-  font-family: 'Montserrat', sans-serif;
   @include font-size (53px);
+  font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   letter-spacing: 10px;
 }
 
 h2 {
-  font-family: 'Montserrat', sans-serif;
   @include font-size (16px);
+  font-family: 'Montserrat', sans-serif;
   font-weight: normal;
   letter-spacing: 2px;
   line-height: 20px;
 }
 
 .title-brand {
+  @include font-size (19px);
+  color: $black;
   font-family: 'Montserrat', sans-serif;
-  text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 4px;
-  color: $black;
-  @include font-size (19px);
+  text-transform: uppercase;
 
 }
 
 .subtitle-brand {
-  font-family: 'Montserrat', sans-serif;
-  text-transform: uppercase;
-  font-weight: bold;
-  color: $dark-gray;
   @include font-size (10px);
+  color: $dark-gray;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 li {
-  list-style: none;
   letter-spacing: 4px;
+  list-style: none;
+}
+
+a {
+  color: initial;
 }

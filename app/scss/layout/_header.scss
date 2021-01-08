@@ -1,13 +1,13 @@
 .header {
+  align-items: center;
   background: $white;
   display: flex;
-  align-items: center;
   justify-content: space-between;
   padding: 20px 20px;
 
   @include from (desktop) {
-    max-width: 1200px;
     margin: 0 auto;
+    max-width: 1200px;
   }
 
   &__menu {
@@ -20,18 +20,18 @@
   }
 
   &__close {
-    display: none;
     @include font-size(30px);
     color: $rose;
+    display: none;
   }
 
   &__brand {
-    display: flex;
     align-items: center;
+    display: flex;
 
     &__img {
-      width: 100%;
       max-width: 40px;
+      width: 100%;
     }
 
     &__name {
@@ -42,14 +42,15 @@
 
   &__navigation {
     @include from (desktop) {
-      display: flex;
       align-items: center;
+      display: flex;
     }
     .page-navigation {
       display: none;
 
       @include from (desktop) {
-        display: flex
+        display: flex;
+        @include font-size(14px);
       }
 
       li {
@@ -72,22 +73,21 @@
 }
 
 .menu-active {
-  height: 100vh;
   flex-direction: column;
+  height: 100vh;
   justify-content: flex-start;
   position: relative;
   transition: ease all .3s;
-  // transform: translateX(-100%);
 
   .header__menu {
     display: none;
   }
   .header__close {
     display: block;
+    padding: 40px;
     position: absolute;
     right: 0;
     top: 0;
-    padding: 40px;
   }
   .header__brand {
     padding: 60px 0;
@@ -95,12 +95,16 @@
   .header__navigation {
     text-align: center;
     .page-navigation {
+      @include font-size(20px);
+      align-items: center;
+      color: $black;
       display: flex;
       flex-direction: column;
-      align-items: center;
-      @include font-size(20px);
-      color: $black;
       padding: 0;
+
+      a {
+        width: 100%;
+      }
 
       li {
         padding: 20px 0;
