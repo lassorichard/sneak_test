@@ -358,6 +358,10 @@ li {
   background: #fc758c;
   color: #ffffff; }
 
+.rose {
+  color: #fc758c;
+  font-weight: bold; }
+
 .header {
   background: #ffffff;
   display: flex;
@@ -472,6 +476,18 @@ li {
 
 .hidden {
   display: none !important; }
+
+.footer {
+  padding: 60px 20px;
+  color: #c3d0d8;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .footer__top {
+    font-size: 12px;
+    font-size: 0.75rem;
+    padding-bottom: 40px;
+    letter-spacing: 3px; }
 
 .btn {
   padding: 12px 30px;
@@ -590,3 +606,8 @@ li {
       columns: 1 !important; } }
   .masonry-view-list .masonry__item {
     display: block; }
+
+.social-media {
+  letter-spacing: 6px; }
+  .social-media a {
+    color: #c3d0d8; }
