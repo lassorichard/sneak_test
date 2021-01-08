@@ -350,6 +350,14 @@ li {
   list-style: none;
   letter-spacing: 4px; }
 
+.max-width {
+  max-width: 1200px;
+  margin: 0 auto; }
+
+.selected {
+  background: #fc758c;
+  color: #ffffff; }
+
 .header {
   background: #ffffff;
   display: flex;
@@ -422,17 +430,13 @@ li {
       display: flex;
       flex-direction: column;
       align-items: center;
-      font-size: 28px;
-      font-size: 1.75rem;
+      font-size: 20px;
+      font-size: 1.25rem;
       color: #707070;
       padding: 0; }
       .menu-active .header__navigation .page-navigation li {
         padding: 20px 0;
         width: 100%; }
-
-.selected {
-  background: #fc758c;
-  color: #ffffff; }
 
 .hero {
   background: linear-gradient(to left, rgba(112, 112, 112, 0.6), rgba(112, 112, 112, 0.6)), url("../images/hero.jpg") no-repeat center center;
@@ -442,21 +446,147 @@ li {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: center; }
+  text-align: center;
+  padding: 0 10px; }
   .hero__title, .hero__subtitle {
-    color: #ffffff; }
+    color: #ffffff;
+    width: 100%; }
   .hero .btn {
     margin-top: 40px; }
+
+.home {
+  padding: 40px 20px;
+  text-align: center; }
+
+#moreButton {
+  cursor: pointer;
+  margin-bottom: 10px;
+  display: block; }
+
+#lessButton {
+  cursor: pointer;
+  display: block; }
+
+.shown {
+  display: inline-block !important; }
+
+.hidden {
+  display: none !important; }
 
 .btn {
   padding: 12px 30px;
   text-transform: uppercase;
   font-size: 14px;
   font-size: 0.875rem;
-  letter-spacing: 1px; }
+  letter-spacing: 1px;
+  -webkit-appearance: none; }
   .btn--primary {
     background: #fc758c;
     color: #ffffff; }
   .btn--secondary {
     background: #ffffff;
     color: #fc758c; }
+
+.view {
+  display: flex;
+  justify-content: center;
+  color: #fc758c;
+  padding: 20px; }
+  .view__grid, .view__list  {
+    padding: 0 20px; }
+  .view__grid {
+    display: none;
+    cursor: pointer; }
+    @media only screen and (min-width: 768px) {
+      .view__grid {
+        display: flex; } }
+  .view__list {
+    font-size: 20px;
+    font-size: 1.25rem;
+    cursor: pointer; }
+
+.categories {
+  font-size: 14px;
+  font-size: 0.875rem;
+  color: #707070;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 0; }
+  @media only screen and (min-width: 768px) {
+    .categories {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 60px; } }
+  .categories li {
+    padding: 12px 30px;
+    cursor: pointer; }
+
+.grid-layout {
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center; }
+
+.masonry {
+  columns: 1;
+  column-gap: 10px;
+  transition: ease all .3s;
+  margin: 40px 0; }
+  @media only screen and (min-width: 768px) {
+    .masonry {
+      columns: 2; } }
+  @media only screen and (min-width: 1024px) {
+    .masonry {
+      columns: 3; } }
+  .masonry__item {
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 10px;
+    transition: ease all .3s;
+    position: relative; }
+  .masonry__img {
+    width: 100%;
+    z-index: 200;
+    transition: ease all .3s; }
+    .masonry__img:hover ~ .masonry__content {
+      opacity: 1; }
+  .masonry__content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #fc758c;
+    width: 95%;
+    height: 95%;
+    opacity: 0;
+    transition: ease all .3s; }
+    .masonry__content:hover {
+      opacity: 1; }
+    .masonry__content__title, .masonry__content__category {
+      color: #ffffff;
+      padding: 20px 0; }
+    .masonry__content__category {
+      letter-spacing: 4px; }
+    .masonry__content__title {
+      font-weight: bold;
+      font-family: 'Montserrat', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 6px;
+      border-bottom: solid #ffffff 1px;
+      margin: 0 60px; }
+
+.masonry-view-list {
+  columns: 1;
+  column-gap: 10px;
+  max-width: 600px;
+  margin: 0 auto; }
+  @media only screen and (min-width: 768px) {
+    .masonry-view-list {
+      columns: 1 !important; } }
+  @media only screen and (min-width: 1024px) {
+    .masonry-view-list {
+      columns: 1 !important; } }
+  .masonry-view-list .masonry__item {
+    display: block; }

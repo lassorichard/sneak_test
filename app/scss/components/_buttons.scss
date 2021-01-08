@@ -3,6 +3,7 @@
   text-transform: uppercase;
   @include font-size(14px);
   letter-spacing: 1px;
+  -webkit-appearance: none;
 
   &--primary {
     background: $rose;
@@ -11,5 +12,30 @@
   &--secondary {
     background: $white;
     color: $rose;
+  }
+}
+
+.view {
+  display: flex;
+  justify-content: center;
+  color: $rose;
+  padding: 20px;
+
+  &__grid, &__list {
+    padding: 0 20px;
+  }
+
+  &__grid {
+    display: none;
+    cursor: pointer;
+
+    @include from (tablet) {
+      display: flex
+    }
+  }
+
+  &__list {
+    @include font-size(20px);
+    cursor: pointer;
   }
 }
