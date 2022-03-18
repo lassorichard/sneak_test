@@ -1,6 +1,6 @@
-# Richard Lasso - Tita Media Test
+# Sneak website
 
-> Sneak website
+> Developed by Richard Lasso Ledesma 
 
 ## Repository
 
@@ -69,15 +69,6 @@ rendered: font-size: 20px; and font-size: 1.25rem;
 8. The menu animation was developed thanks to the integration of CSS and JS.
 9. Tags were created for the positioning of the web page in search engines.
 
-## Notas
-Due to time constraints there are some things I would have liked to do:
-1. Make the grid layout with a dynamism in JS to make it interactive.
-4. Cross browsing on different devices and browsers.
-5. Implement a lazy loading logic for images, optimizing loading time and weight.
-6. Configure Unit Testing tasks.
-7. Test Screen Reader for accessibility.
-
-
 ## Tech stack
 
 HTML5
@@ -91,6 +82,5 @@ ES6
 JS
 
 GULP
-
 
 ### I appreciate your time reading this document.
